@@ -30,8 +30,8 @@ public class EmployeeController{
     }
 
      @DeleteMapping("/employees/{employeeId}")
-    public ArrayList<Employee> deleteEmployee(@PathVariable int employeeId){
-       return employeeService.deleteEmployee(employeeId);
+    public void deleteEmployee(@PathVariable int employeeId){
+       employeeService.deleteEmployee(employeeId);
     }
 
     
