@@ -73,7 +73,7 @@ public class EmployeeService implements EmployeeRepository {
     }
     
     
-    public ArrayList<Employee> deleteEmployee(int employeeId){
+    public void deleteEmployee(int employeeId){
         Employee employee =  employeeList.get(employeeId);
         if(employee == null){
             throw new ResponseStatusException(HttpStatus.NOT_FOUND);
