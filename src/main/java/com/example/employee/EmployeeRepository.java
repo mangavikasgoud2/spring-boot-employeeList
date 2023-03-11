@@ -11,5 +11,5 @@ public interface EmployeeRepository{
 
     Employee updateEmployee(int employeeId, Employee employee);
 
-    ArrayList<Employee> deleteEmployee(int employeeId);
+    void deleteEmployee(int employeeId);
 }
